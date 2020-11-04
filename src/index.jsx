@@ -4,7 +4,7 @@ import './styles.css';
 
 const helloWorld = <div className='main'>
     <h1 className='greeting'>
-        Hello, World!
+        <span className='center'>Hello, World!</span>
     </h1>
 </div>
 
