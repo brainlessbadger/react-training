@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react';
 
+const Button = ({children, onClick}) => {
+    return <button type='button' className='button smaller-text' onClick={onClick}>
+        {children}
+    </button>
+}
+
 const titles = [
     'React',
     'Szkolonko',
-    'Zabierzcie mnie stond',
+    'Zabiercie mie stond',
     'Związek Radziecki',
     'Lody vaniliowe',
     'fooBar'
@@ -12,23 +18,30 @@ const titles = [
 export const TitleChanger = () => {
     const [titleNumber, setTitleNumber] = useState(0);
 
+    const currentTitle = titles[titleNumber];
+
     useEffect(() => {
         const oldTitle = document.title;
 
-        document.title = titles[titleNumber];
+        document.title = currentTitle;
 
         return () => {
             document.title = oldTitle;
         }
     });
 
+    const nextTitle = () => {
+        setTitleNumber(titleNumber => (titleNumber + 1) % titles.length);
+    }
 
     return <div className='title-changer'>
         <span className='center'>
-            Width: {width}px
+            {currentTitle}
         </span>
-        <span className='center'>
-            Height: {height}px
-        </span>
+        <div className='button-container'>
+            <Button onClick={nextTitle} className=''>
+                Next title
+            </Button>
+        </div>
     </div>
 }
