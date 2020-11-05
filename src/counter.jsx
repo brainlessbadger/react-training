@@ -18,7 +18,7 @@ export const Counter = () => {
         setCount(count => count + 1);
     }
 
-    return <h1 className='counter'>
+    return <div className='counter'>
         <span className='center'>
             Count: {count}
         </span>
@@ -30,5 +30,5 @@ export const Counter = () => {
                 +
             </Button>
         </div>
-    </h1>
+    </div>
 }
