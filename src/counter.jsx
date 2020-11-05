@@ -6,7 +6,6 @@ const Button = ({children, onClick}) => {
     </button>
 }
 
-
 export const Counter = () => {
     const [count, setCount] = useState(0);
 
