@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Counter } from './counter';
+import { Measure } from './measure';
 import './styles.css';
 
 const helloWorld = <div className='main'>
-    <Counter />
+    <Measure />
 </div>
 
 render(helloWorld, document.querySelector('#root'));

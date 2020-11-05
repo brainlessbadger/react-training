@@ -25,7 +25,8 @@ body {
 }
 
 .greeting, 
-.counter {
+.counter,
+.measure {
     color: rgb(95, 166, 248);
     font-size: 72px;
     font-weight: bold;
