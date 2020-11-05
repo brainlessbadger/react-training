@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Greeting } from './greeting';
+import { Counter } from './counter';
 import './styles.css';
 
 const helloWorld = <div className='main'>
-    <Greeting who='World'/>
+    <Counter />
 </div>
 
 render(helloWorld, document.querySelector('#root'));
