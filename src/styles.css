@@ -26,7 +26,8 @@ body {
 
 .greeting, 
 .counter,
-.measure {
+.measure,
+.title-changer {
     color: rgb(95, 166, 248);
     font-size: 72px;
     font-weight: bold;
