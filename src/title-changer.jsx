@@ -22,13 +22,13 @@ export const TitleChanger = ({onRemove}) => {
 
     useEffect(() => {
         const oldTitle = document.title;
-
+    
         document.title = currentTitle;
-
+    
         return () => {
             document.title = oldTitle;
         }
-    });
+    }, [currentTitle]);
 
     const nextTitle = () => {
         setTitleNumber(titleNumber => (titleNumber + 1) % titles.length);
