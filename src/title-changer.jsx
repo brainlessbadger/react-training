@@ -15,7 +15,7 @@ const titles = [
     'fooBar'
 ]
 
-export const TitleChanger = () => {
+export const TitleChanger = ({onRemove}) => {
     const [titleNumber, setTitleNumber] = useState(0);
 
     const currentTitle = titles[titleNumber];
@@ -39,8 +39,11 @@ export const TitleChanger = () => {
             {currentTitle}
         </span>
         <div className='button-container'>
-            <Button onClick={nextTitle} className=''>
+            <Button onClick={nextTitle}>
                 Next title
+            </Button>
+            <Button onClick={onRemove}>
+                Remove me
             </Button>
         </div>
     </div>

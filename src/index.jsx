@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { render } from 'react-dom';
 import { Measure } from './measure';
 import { TitleChanger } from './title-changer';
 import './styles.css';
 
-const helloWorld = <div className='main'>
-    <Measure />
-    <TitleChanger />
-</div>
+const Main = () => {
+    const [titleChangerExists, setTitleChangerExists] = useState(true);
 
-render(helloWorld, document.querySelector('#root'));
+    const removeTitleChanger = () => {
+        setTitleChangerExists(false);
+    }
+
+    return <div className='main'>
+        <Measure />
+        {titleChangerExists && <TitleChanger onRemove={removeTitleChanger}/>}
+    </div>
+}
+
+render(<Main />, document.querySelector('#root'));
