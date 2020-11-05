@@ -22,7 +22,7 @@ export const Measure = () => {
             Width: {width}px
         </span>
         <span className='center'>
-            Heigt: {height}px
+            Heigth: {height}px
         </span>
     </div>
 }
