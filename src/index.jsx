@@ -14,7 +14,7 @@ const Main = () => {
         setCount3(0);
     }
 
-    return <div>
+    return <div className="main">
         <Counter count={count1} onClick={() => setCount1(count => ++count)} />
         <Counter count={count2} onClick={() => setCount2(count => ++count)}  />
         <Counter count={count3} onClick={() => setCount3(count => ++count)}  />

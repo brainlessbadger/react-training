@@ -22,7 +22,7 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    gap: 16px;
 }
 
 .greeting, 
