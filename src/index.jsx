@@ -15,9 +15,9 @@ const Main = () => {
     }
 
     return <div>
-        <Counter count={count1} onChange={setCount1} />
-        <Counter count={count2} onChange={setCount2}  />
-        <Counter count={count3} onChange={setCount3}  />
+        <Counter count={count1} onClick={() => setCount1(count => ++count)} />
+        <Counter count={count2} onClick={() => setCount2(count => ++count)}  />
+        <Counter count={count3} onClick={() => setCount3(count => ++count)}  />
         <button 
             type="button" 
             className="button" 

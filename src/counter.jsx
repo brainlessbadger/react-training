@@ -1,14 +1,10 @@
 import React, { useState } from "react"
 
-export const Counter = ({count, onChange}) => {
-    const clickHandler = () => {
-        onChange(count + 1);
-    }
-
+export const Counter = ({count, onClick}) => {
     return <button 
         type="button" 
         className="button" 
-        onClick={clickHandler}
+        onClick={onClick}
     >
         Clicked {count} times!
     </button>
