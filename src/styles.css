@@ -56,7 +56,7 @@ body {
     gap: 36px;
 }
 
-.button {
+.button, input, select, option {
     color: rgb(95, 166, 248);
     font-size: 144px;
     font-weight: bold;
@@ -71,10 +71,36 @@ body {
     flex-grow: 1;
     flex-basis: 0;
     cursor: pointer;
+    min-width: 0
+}
+
+input {
+    width: 100%;
+    text-align: right;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+label {
+    font-size: 144px;
+    font-weight: bold;
+    font-variant: small-caps;
 }
 
 .button.smaller-text {
     font-size: 44px;
+}
+
+.button[disabled] {
+    color: gray !important;
+    border-color: gray !important;
 }
 
 .button:active {
@@ -82,7 +108,8 @@ body {
 }
 
 .button:focus, 
-.button:hover {
+.button:enabled:hover,
+input:focus {
     border-color: white;
     color: white;
     box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5);
