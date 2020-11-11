@@ -1,12 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './styles.css';
-import { TemperatureInput } from './temperature-input';
+import { Counter } from './counter';
 
 const Main = () => {
     return <div>
-        <TemperatureInput scale="celsius" />
-        <TemperatureInput scale="fahrenheit" />
+        <Counter />
+        <Counter />
+        <Counter />
     </div>
 }
 
