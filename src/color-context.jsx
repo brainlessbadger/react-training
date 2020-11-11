@@ -1,0 +1,14 @@
+import { createContext } from "react";
+
+
+export const ColorContext = createContext(['blue', changeColor]);
+
+export const ColorRoot = ({children}) => {
+    ?????????
+    ?????????
+    ?????????
+    ?????????
+    return <ColorContext.Provider value={[currentColor, changeCurrentColor]}>
+        {children}
+    </ColorContext.Provider>
+}

@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
-import { Form } from './form';
+import { ColorRoot } from './color-context';
 import './styles.css';
 
 const Main = () => {
-    return <div className='main'>
-        <Form />
-    </div>
+    return <ColorRoot>
+
+    </ColorRoot>
 }
 
 render(<Main />, document.querySelector('#root'));
