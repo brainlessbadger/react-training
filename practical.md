@@ -1,0 +1,1 @@
+* add table with names of participants of training, greet all of them
