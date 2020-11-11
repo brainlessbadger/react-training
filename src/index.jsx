@@ -1,12 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { ColorRoot } from './color-context';
 import './styles.css';
+import { TemperatureInput } from './temperature-input';
 
 const Main = () => {
-    return <ColorRoot>
-
-    </ColorRoot>
+    return <div>
+        <TemperatureInput scale="celsius" />
+        <TemperatureInput scale="fahrenheit" />
+    </div>
 }
 
 render(<Main />, document.querySelector('#root'));

@@ -128,3 +128,19 @@ input:focus {
     color: white;
     box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5);
 }
+
+legend {
+    font-size: 72px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.boil, .not-boil {
+    font-size: 72px;
+    font-weight: bold;
+    font-variant: small-caps;
+    margin: 0;
+}
+.boil {
+    color: red;
+}
