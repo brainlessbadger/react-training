@@ -23,7 +23,7 @@ const Main = () => {
             className="button" 
             onClick={reset}
         >
-            RESET
+            RESET (current sum {count1 + count2 + count3})
         </button>
     </div>
 }
