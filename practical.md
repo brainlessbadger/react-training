@@ -1,1 +1,1 @@
-* add table with names of participants of training, greet all of them
+* add array with names of participants of training, greet all of them
